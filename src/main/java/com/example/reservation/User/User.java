@@ -1,19 +1,19 @@
-package com.example.reservation.Controller;
+package com.example.reservation.User;
 
 import lombok.AllArgsConstructor;
+import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-@Getter
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class MemberDto {
-
-    private int memberNum;
-    private String name;
-    private String email;
-    private String phone;
-    private String pwd;
+public class User {
+    private String userId;
+    private String userPW;
+    private String userName;
+    private String userTel;
+    private String userBirth;
 }
 /*
 * 회원번호 int memberNum
